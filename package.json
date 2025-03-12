@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "setup-playwright": "npx playwright install --with-deps firefox chromium",
-    "test": "npm run setup-playwright && web-test-runner --node-resolve --playwright --browsers firefox chromium"
+    "testJS": "npm run setup-playwright && web-test-runner test/simple.test.js --node-resolve --playwright --browsers firefox chromium",
+    "testHTML": "npm run setup-playwright && web-test-runner test/simple.test.html --node-resolve --playwright --browsers firefox chromium",
+    "testJSHTML": "npm run setup-playwright && web-test-runner test/simple.test.{js,html} --node-resolve --playwright --browsers firefox chromium"
   },
   "author": "",
   "license": "Apache-2.0",

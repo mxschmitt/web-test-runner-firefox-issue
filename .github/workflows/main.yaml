@@ -2,8 +2,8 @@ name: Build
 on: [push]
 
 jobs:
-  test:
-    name: Test
+  testJS:
+    name: Test JS
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,4 +14,30 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run test
+      - run: npm run testJS
+  testHTML:
+    name: Test HTML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run testHTML
+  testJSHTML:
+    name: Test JS and HTML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run testJSHTML
