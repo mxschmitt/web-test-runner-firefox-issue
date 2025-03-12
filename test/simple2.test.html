@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <script type="module">
+      import { expect } from '@esm-bundle/chai';
+      import { runTests } from '@web/test-runner-mocha';
+
+      runTests(() => {
+        it('works 2', () => {
+          expect('foo2').to.equal('foo2');
+        });
+      });
+    </script>
+  </body>
+</html>
