@@ -16,5 +16,8 @@
     "@web/test-runner-mocha": "0.9.0",
     "@web/test-runner-playwright": "0.11.0",
     "mocha": "11.1.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.35.0"
   }
 }
