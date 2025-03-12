@@ -10,9 +10,5 @@
  * governing permissions and limitations under the License.
  */
 export default {
-  // browserStartTimeout: 120000,
-  files: [
-    'test/simple.test.js',
-    'test/simple.test.html',
-  ],
+  browserStartTimeout: 120000,
 };
