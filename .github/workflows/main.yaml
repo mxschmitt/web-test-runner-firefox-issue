@@ -40,7 +40,7 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run testJSHTML
+      - run: xvfb-run npm run testJSHTML
   test2JS:
     name: Test 2 JS
     runs-on: ubuntu-latest
@@ -53,7 +53,7 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run test2JS
+      - run: xvfb-run npm run test2JS
   test2HTML:
     name: Test 2 HTML
     runs-on: ubuntu-latest
