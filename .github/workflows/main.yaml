@@ -32,6 +32,7 @@ jobs:
       - run: npm run testHTML
         env:
           DEBUG: pw:browser
+      - run: npx envinfo --preset playwright
   testJSHTML:
     name: Test JS and HTML
     runs-on: ubuntu-latest
