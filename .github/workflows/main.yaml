@@ -15,6 +15,8 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run testJS
+        env:
+          DEBUG: pw:browser
   testHTML:
     name: Test HTML
     runs-on: ubuntu-latest
@@ -28,6 +30,8 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run testHTML
+        env:
+          DEBUG: pw:browser
   testJSHTML:
     name: Test JS and HTML
     runs-on: ubuntu-latest
@@ -41,6 +45,8 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run testJSHTML
+        env:
+          DEBUG: pw:browser
   test2JS:
     name: Test 2 JS
     runs-on: ubuntu-latest
@@ -54,6 +60,8 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run test2JS
+        env:
+          DEBUG: pw:browser
   test2HTML:
     name: Test 2 HTML
     runs-on: ubuntu-latest
@@ -67,3 +75,5 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run test2HTML
+        env:
+          DEBUG: pw:browser

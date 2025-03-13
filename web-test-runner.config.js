@@ -10,5 +10,5 @@
  * governing permissions and limitations under the License.
  */
 export default {
-  browserStartTimeout: 240000,
+  // browserStartTimeout: 240000,
 };
